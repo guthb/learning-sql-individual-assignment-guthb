@@ -1,6 +1,6 @@
---Provide a query showing a unique list of billing countries from the Invoice table.
+--Provide a query showing only the Employees who are Sales Agents.
 
 use Chinook;
 
-SELECT DISTINCT BillingCountry AS Country 
-FROM Invoice;
+SELECT * FROM Employee 
+WHERE Title = 'Sales Support Agent'
