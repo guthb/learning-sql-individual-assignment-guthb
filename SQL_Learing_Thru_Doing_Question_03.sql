@@ -7,7 +7,10 @@
 use Chinook;
 
 
-SELECT FirstName +' '+ LastName AS 'Customer Name', InvoiceId AS 'Invoice ID#', CONVERT(date,InvoiceDate) as 'Date of Invoice', BillingCountry  AS 'Billing Country'
+SELECT FirstName +' '+ LastName AS 'Customer Name', 
+InvoiceId AS 'Invoice ID#', 
+CONVERT(date,InvoiceDate) AS 'Date of Invoice', 
+BillingCountry  AS 'Billing Country'
 FROM Customer JOIN Invoice ON Invoice.CustomerId = Customer.CustomerId
 WHERE Country = 'Brazil'
  
