@@ -1,11 +1,9 @@
---Provide a query that shows the 
---Invoice Total, Customer name, Country and 
---Sale Agent name for all invoices and customers.
+--Provide a query that shows the invoices associated with each sales agent.
+-- The resultant table should include the Sales Agent's full name.
 
-use Chinook;
 
-SELECT Invoice.Total, Customer.FirstName + ' ' + Customer.LastName AS 'Customer Name', Customer.Country, Employee.FirstName + ' ' + Employee.LastName AS 'Sales Support Assoc.'
-FROM Invoice 
-JOIN Customer  ON Invoice.CustomerId = Customer.CustomerId
-JOIN Employee  ON Customer.SupportRepId = Employee.EmployeeId
+SELECT Employee.FirstName + ' ' + Employee.LastName AS 'Sales Support Assoc.', Invoice.Total AS 'Invoice Total', Invoice.InvoiceId AS 'Invoice Numb.'
+FROM Employee 
+JOIN Customer ON Employee.EmployeeId = Customer.SupportRepId 
+JOIN Invoice ON Customer.CustomerId = Invoice.CustomerId
 ORDER By Employee.LastName;
