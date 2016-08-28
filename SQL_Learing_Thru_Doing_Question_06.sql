@@ -2,5 +2,8 @@
 
 use Chinook;
 
-SELECT * FROM Invoice WHERE BillingCountry = 'Brazil';
+SELECT * 
+FROM Invoice 
+WHERE BillingCountry = 'Brazil'
+ORDER BY Invoice.BillingCity;
 
