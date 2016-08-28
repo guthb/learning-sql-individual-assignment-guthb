@@ -6,7 +6,6 @@
 
 use Chinook;
 
-
 SELECT FirstName +' '+ LastName AS 'Customer Name', 
 InvoiceId AS 'Invoice ID#', 
 CONVERT(date,InvoiceDate) AS 'Date of Invoice', 
