@@ -4,8 +4,9 @@
 
 use Chinook;
 
-SELECT Invoice.Total, Customer.FirstName + ' ' + Customer.LastName AS 'Customer Name', Customer.Country, Employee.FirstName + ' ' + Employee.LastName AS 'Sales Support Assoc.'
+SELECT Invoice.Total, Customer.FirstName + ' ' + Customer.LastName AS 'Customer Name', 
+       Customer.Country, Employee.FirstName + ' ' + Employee.LastName AS 'Sales Support Assoc.'
 FROM Invoice 
 JOIN Customer  ON Invoice.CustomerId = Customer.CustomerId
 JOIN Employee  ON Customer.SupportRepId = Employee.EmployeeId
-Order BY Employee.LastName;
+ORDER BY Employee.LastName;
