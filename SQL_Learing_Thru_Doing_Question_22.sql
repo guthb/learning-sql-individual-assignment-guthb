@@ -2,7 +2,7 @@
 
 use Chinook;
 
-SELECT Employee.FirstName+' '+Employee.LastName As 'Sales Agent', Count(Customer.CustomerId) as 'Customers Total' 
+SELECT Employee.FirstName+' '+Employee.LastName As 'Sales Agent', Count(Customer.CustomerId) AS 'Customers Total' 
 FROM Employee 
 JOIN Customer ON Employee.EmployeeId = Customer.SupportRepId 
 GROUP BY Employee.EmployeeId, Employee.FirstName, Employee.LastName;
