@@ -28,6 +28,17 @@ There's 2 options on where/how complete this assignment either using Visual Stud
 * Once the code has executed successfully, refresh your server in the "Sql Server Object Explorer Window"
 * You should now see the chinook database.
 
+### SQL Server Management Studio For those that have it installed
+* Similar as Visual Studio instructions
+* Open Microsoft SQL Server Management Studio and connect to you local instance
+* A sql script for installing can be downloaded from here. https://chinookdatabase.codeplex.com/
+* Once you have downloaded the zip file. You will see several scripts.
+* Open the one called "Chinook_SqlServer.sql"
+* Query Analyzer should open and display the SQL Scripts in the file.
+* Press the Execute green arrow button or F5 to execute the SQL statements to build the Chinook database
+* You will now see a Chinook Database under your databases Object Explorer window.
+
+
 ## Exercises
 
 For each of the following exercises, provide the appropriate query. Yes, even the ones that are expressed in the form of questions. Everything from class and the [Sqlite Documentation](http://www.sqlite.org/) is fair game. No Sharing of Answers.
@@ -46,7 +57,7 @@ For each of the following exercises, provide the appropriate query. Yes, even th
 12. Provide a query that includes the track name with each invoice line item.
 13. Provide a query that includes the purchased track name AND artist name with each invoice line item.
 14. Provide a query that shows the # of invoices per country. HINT: [GROUP BY](http://www.sqlite.org/lang_select.html#resultset)
-15. Provide a query that shows the total number of tracks in each playlist. The Playlist name should be include on the resulant table.
+15. Provide a query that shows the total number of tracks in each playlist. The Playlist name should be include on the resultant table.
 16. Provide a query that shows all the Tracks, but displays no IDs. The resultant table should include the Album name, Media type and Genre.
 17. Provide a query that shows all Invoices but includes the # of invoice line items.
 18. Provide a query that shows total sales made by each sales agent.
