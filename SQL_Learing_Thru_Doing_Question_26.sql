@@ -10,3 +10,4 @@ JOIN Album ON Track.AlbumId = Album.AlbumId
 JOIN Artist ON Album.ArtistId = Artist.ArtistId
 GROUP BY Artist.ArtistId, Artist.Name
 ORDER BY 'Total Track Sales' DESC;
+
